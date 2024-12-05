@@ -8,9 +8,62 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>Guilherme PortFolio</title>
-		<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="Titulo" >Bem vindo ao meu PortFolio</h1>
+		<style>
+			@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+			* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  line-height: 2;
+  height: 100%;
+  background-color: #221;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #fff090;
+}
+
+li {
+  color: #4FAF44;
+}
+
+.arrow i {
+  display: none;
+}
+
+.arrow {
+  position:relative;
+	display: block;
+  color: #F6EB14;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.arrow:hover i { 
+  display: block;
+  position: absolute;
+  top: 0.50em; 
+  left: -6em;
+}
+		</style>
+    <ol>
+			<li><a class="arrow" href="About.astro"><i class="fas fa-arrow-alt-right"></i>About</a></li>
+			<li><a class="arrow" href="Projects.astro"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
+		</ol>
   </body>
 </html>
